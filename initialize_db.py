@@ -11,7 +11,7 @@ def initialize_database():
     # Create a sample table
     print("Creating table if it does not exist...")
     cursor.execute('''
-        CREATE TABLE students
+        CREATE TABLE IF NOT EXISTS students
             (id integer primary key, 
             name text, 
             age integer, 
