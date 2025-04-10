@@ -8,14 +8,14 @@
             },
             "extensions": [
                 "ms-python.python",
-                "ms-python.vscode-pylance"
+                "ms-python.vscode-pylance",
+                "qwtel.sqlite-viewer"
             ]
         }
     },
     "features": {
-    "ghcr.io/swift-server-community/swift-devcontainer-features/sqlite:latest": {}
-}
-,
+        "ghcr.io/swift-server-community/swift-devcontainer-features/sqlite:latest": {}
+    },
     "mounts": [
         "source=${localWorkspaceFolder}/data,target=/home/vscode/data,type=bind,consistency=cached"
     ],
@@ -23,4 +23,3 @@
     "postCreateCommand": "pip install --user -r requirements.txt",
     "remoteUser": "vscode"
 }
-
